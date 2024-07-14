@@ -1,0 +1,89 @@
+.starting-screen {
+  width: 375px; /* Adjust width as needed */
+  height: auto; /* Auto height */
+  max-height: 812px; /* Maximum height */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #FE8C00;
+  color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 1; /* Adjust opacity if needed */
+  overflow: auto; /* Allow scrolling if content exceeds height */
+}
+
+.starting-screen p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rectangle-container2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust spacing between rectangles */
+}
+
+.rectangle2 {
+  width: 24px;
+  height: 6px;
+  border-radius: 100px 0px 0px 0px;
+  background-color: #C2C2C2;
+  opacity: 1;
+}
+
+.rectangle.second2 {
+  background-color: #C2C2C2;
+}
+
+.rectangle.third2 {
+  /* Add any specific styles for the third rectangle if needed */
+  background-color: #C2C2C2;
+}
+
+.skip-next-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Add some spacing from the rectangles */
+}
+
+.skip-text, .next-text {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+
+.skip-text {
+  width: 30px;
+}
+
+.next-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.next-text {
+  width: 32px;
+  margin-right: 5px; /* Add some spacing between text and icon */
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+  padding: 5px 2px;
+  gap: 0px;
+  opacity: 1; /* Adjust as needed */
+}

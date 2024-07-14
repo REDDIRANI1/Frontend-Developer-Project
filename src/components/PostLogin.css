@@ -1,0 +1,207 @@
+.background-container1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/image 39.png'); /* Corrected URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.post-login-container {
+  width: 400px; /* Adjust width as needed */
+  height: 600px; /* Adjust height as needed */
+  background-color: #FFFFFF;
+  border-radius: 24px 24px 0px 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Adjusted from auto to hidden */
+  top: 220px;
+  padding: 0px 24px 24px 24px;
+  gap: 72px;
+}
+
+.post-login-container h2 {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 24px;
+  margin-top: 100px;
+}
+
+.tracking-button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 10px; /* Space above button */
+  background-color: #FE8C00;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 18px; /* Font size for button */
+}
+
+.tracking-button:hover {
+  background-color: #FE8C00;
+}
+
+.logout-text {
+  width: 100%;
+  height: 20px;
+  margin-top: 22px; 
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: #878787;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.logout-text:hover {
+  text-decoration: underline;
+}
+
+.tick-mark {
+  color: #FE8C00; /* Changed color to orange for contrast */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.polygon-4 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto; /* Center horizontally */
+  left: 10.19px;
+  top: 50px;
+  z-index: 2; /* Ensure it's above the ellipse-around-polygon */
+}
+
+.ellipse-around-polygon {
+  width: 124px;
+  height: 124px;
+  top: 40px;
+  left: 170.19px;
+  background-color: #FE8C00;
+  opacity: 0.1; /* Adjusted as needed */
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1; /* Ensure it's below the polygon-4 */
+}
+
+.star {
+  width: 180px;
+  height: 21px;
+  position: absolute;
+  top: 110px;
+  left: 70.19px;
+  color: #FE8C00; /* Customize color */
+  opacity: 1; /* Set to 1 or adjust as needed */
+}
+
+.vector-36 {
+  width: 10px;
+  height: 1px;
+  position: absolute;
+  top: 90.47px;
+  left: 130.19px;
+  background-color: #FB46FF;
+  border: 3px solid #FB46FF;
+  opacity: 1; /* Set to 1 or adjust as needed */
+  transform: rotate(-23.91deg); /* Apply rotation */
+}
+
+.ellipse-191 {
+  width: 10px;
+  height: 10px;
+  top: 50px;
+  left: 140.19px;
+  background-color: #B468FF;
+  opacity: 1;
+  position: absolute;
+}
+
+.vector-34 {
+  width: 28.5px;
+  height: 8.1px;
+  top: 10px;
+  left: 150.6px;
+  border: 2px solid #FE8C00;
+  opacity: 1;
+  position: absolute;
+  transform: rotate(-28.98deg);
+}
+
+.ellipse-709 {
+  width: 15px;
+  height: 17px;
+  top: 2px;
+  left: 210.19px;
+  background-color: #B468FF;
+  opacity: 1;
+  position: absolute;
+}
+
+.star1 {
+  width: 21px; /* Corrected width */
+  height: 21px;
+  position: absolute;
+  top: 3px;
+  left: 250.19px;
+  color: #FB46FF; /* Customize color */
+  opacity: 1; /* Set to 1 or adjust as needed */
+}
+
+.vector-33 {
+  width: 20px;
+  height: 21.28px;
+  top: 30px;
+  left: 300.72px;
+  border-top: 4px solid #FE8C00;
+  opacity: 1;
+  transform: rotate(-16.17deg);
+  position: absolute;
+}
+
+.rectangle-5639 {
+  width: 10px;
+  height: 7px;
+  top: 60px;
+  left: 320.19px;
+  border-radius: 2px 0 0 0;
+  background-color: #FE8C00;
+  opacity: 1;
+  position: absolute;
+}
+
+.ellipse-711 {
+  width: 16px;
+  height: 16px;
+  top: 70px;
+  left: 320.19px;
+  background-color: #FE8C00;
+  opacity: 1;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.vector-35 {
+  width: 7.79px;
+  height: 20px;
+  top: 110.81px;
+  left: 310.19px;
+  border: 3px solid #B468FF;
+  opacity: 1;
+  position: absolute;
+  transform: rotate(29.52deg);
+}

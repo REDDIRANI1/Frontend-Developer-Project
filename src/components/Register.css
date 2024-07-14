@@ -1,0 +1,103 @@
+.register-page {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Background color for the page */
+}
+
+.register-container {
+  width: 375px; /* Adjust width as needed */
+  height: auto; /* Auto height */
+  max-height: 812px; /* Maximum height */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 1; /* Adjust opacity if needed */
+  overflow: auto; /* Allow scrolling if content exceeds height */
+}
+
+.register-container h2 {
+  margin-bottom: 20px; /* Space between heading and form */
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form elements horizontally */
+}
+
+.register-container label {
+  margin-bottom: 10px;
+  text-align: left; /* Align label text to the left */
+  width: 100%;
+}
+
+.register-container input {
+  width: calc(100% - 20px); /* Adjust width to fit container */
+  padding: 0.5rem;
+  margin-bottom: 10px; /* Space between input fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Font size for inputs */
+}
+
+.register-container button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 10px; /* Space above button */
+  background-color: #FE8C00;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 18px; /* Font size for button */
+}
+
+.register-container button:hover {
+  background-color: #FE8C00;
+}
+
+.register-container .terms-agree {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.register-container .terms-agree input[type="checkbox"] {
+  cursor: pointer; /* Ensure cursor changes on hover over checkbox */
+  width: 20px; /* Set width of the checkbox */
+  height: 20px; /* Set height of the checkbox */
+  margin-right: 8px; /* Adjust space between checkbox and text */
+  appearance: none; /* Remove default appearance */
+  background-color: #FE8C00; /* Custom checkbox color */
+  border: 1px solid #ccc; /* Optional: Border for checkbox */
+  border-radius: 4px; /* Optional: Rounded corners */
+  outline: none; /* Remove outline on focus */
+  position: relative; /* Position relative for absolute positioning */
+}
+
+.register-container .terms-agree input[type="checkbox"]:checked::before {
+  content: '✔'; /* Checkmark icon when checkbox is checked */
+  font-size: 16px; /* Adjust checkmark size */
+  color: white; /* Color of the checkmark */
+  position: absolute; /* Position absolute to center */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Translate to center */
+  line-height: 1; /* Remove line height */
+}
+
+.register-container p a {
+  color: #FE8C00;
+  text-decoration: none;
+}
+p.center-text {
+  text-align: center;
+  margin: 20px 0;
+}
