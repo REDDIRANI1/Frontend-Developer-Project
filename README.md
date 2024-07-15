@@ -1,1 +1,1 @@
-# shop-smart-fe
+# Frontend-Developer-Project
