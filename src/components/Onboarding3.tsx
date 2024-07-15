@@ -7,6 +7,7 @@ const Onboarding3 = () => {
   const navigate = useNavigate();
 
   const handleDrag = () => {
+    console.log("Dragged to Onboarding2");
     navigate("/Onboarding2");
   };
 
@@ -59,41 +60,39 @@ const Onboarding3 = () => {
         <div
           style={{
             position: 'absolute',
-            top: '80%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
+            top: '70%',
+            left: '40%',
+            // transform: 'translate(-50%, -50%)',
             width: '94px',
             height: '94px',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-          }}
-        >
-          <div
-            style={{
-              position: 'absolute',
-              width: '100%',
-              height: '100%',
+            // position: 'absolute',
+            //   width: '100%',
+            //   height: '100%',
               transform: 'rotate(45deg)',
               borderRadius: '94px',
               borderTop: '3px solid rgba(255, 255, 255, 1)',
               borderLeft: '3px solid rgba(255, 255, 255, 0.5)',
               borderBottom: '3px solid rgba(255, 255, 255, 1)',
               borderRight: '3px solid rgba(255, 255, 255, 1)',
-            }}
-          ></div>
+          }}
+        >
           <div
             style={{
+              right: '10%',
+              left:'50px',
               width: '60px',
               height: '60px',
-              borderRadius: '50%',
+              borderRadius: '90%',
               backgroundColor: '#FFFFFF',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              cursor: 'pointer', // Ensure cursor changes to pointer
+              cursor: 'pointer',
             }}
-            onClick={handleArrowClick}
+            onClick={handleArrowClick} // Move the onClick here
           >
             <FontAwesomeIcon
               icon={faArrowRight}
@@ -101,7 +100,14 @@ const Onboarding3 = () => {
               style={{
                 fontSize: '36px',
                 color: '#FE8C00',
+                left:'50px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                cursor: 'pointer',
+                transform: 'rotate(315deg)',
               }}
+
             />
           </div>
         </div>
