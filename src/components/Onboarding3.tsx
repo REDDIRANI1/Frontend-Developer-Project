@@ -20,8 +20,8 @@ const Onboarding3 = () => {
     <div
       className="background-container1"
       style={{
-        width: '110%',
-        height: '100vh',
+        width: '400px',
+        height: '812px',
         backgroundImage: 'url("/image 9.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -36,8 +36,8 @@ const Onboarding3 = () => {
         draggable="true"
         onDrag={handleDrag}
         style={{
-          top: '70px',
-          width: '305px',
+          top: '60px',
+          width: '280px',
           height: '490px',
           padding: '50px',
           backgroundColor: '#FE8C00',
