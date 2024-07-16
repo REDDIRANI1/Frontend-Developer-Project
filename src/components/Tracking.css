@@ -1,5 +1,6 @@
 .tracking-container {
-  width: 375px;
+  width: 100%; 
+  max-width: 375px;
   height: auto;
   max-height: 812px;
   position: absolute;
