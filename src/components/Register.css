@@ -7,7 +7,8 @@
 }
 
 .register-container {
-  width: 340px; /* Adjust width as needed */
+  width: 100%; /* Adjust width as needed */
+  max-width: 375px;
   height: auto; /* Auto height */
   max-height: 812px; /* Maximum height */
   position: absolute;
