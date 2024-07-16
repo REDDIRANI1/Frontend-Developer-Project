@@ -106,3 +106,30 @@ body, html {
   gap: 0px;
   opacity: 1; /* Adjust as needed */
 }
+@media screen and (min-width: 480px) {
+  .starting-screen {
+    max-width: 400px;
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .starting-screen {
+    max-width: 450px;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .starting-screen {
+    max-width: 500px;
+    padding: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .starting-screen {
+    max-width: 550px;
+    padding: 40px;
+  }
+}
