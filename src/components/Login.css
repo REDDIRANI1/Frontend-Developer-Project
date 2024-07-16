@@ -1,18 +1,18 @@
+/* Base styles */
 .login-page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 10px;
 }
 
 .login-container {
-  width: 375px;
+  width: 100%;
+  max-width: 375px;
   height: auto;
   max-height: 812px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   padding: 20px;
   background-color: #FFFFFF;
   border-radius: 8px;
@@ -82,4 +82,33 @@
 .forgot-password a {
   color: #FE8C00;
   text-decoration: none;
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 480px) {
+  .login-container {
+    max-width: 400px;
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .login-container {
+    max-width: 450px;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .login-container {
+    max-width: 500px;
+    padding: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .login-container {
+    max-width: 550px;
+    padding: 40px;
+  }
 }
