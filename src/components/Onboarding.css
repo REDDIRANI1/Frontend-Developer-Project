@@ -9,9 +9,9 @@ body, html {
 }
 
 .background-container {
-  width: 110%;
+  width: 90%;
   height: 100vh;
-  background-image: url('/image 39.png'); /* Adjust path to match your image */
+  background-image: url('/image 7.png'); /* Adjust path to match your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body, html {
 }
 
 .starting-screen {
-  width: 50%;
+  width: 70%;
   max-width: 375px;
   height: auto;
   max-height: 812px;
@@ -35,7 +35,7 @@ body, html {
   opacity: 1; /* Adjust opacity if needed */
   overflow: auto; /* Allow scrolling if content exceeds height */
   text-align: center;
-  top: 130px;
+  top: 100px;
   left: 0.5px;
   border-radius: 48px;
 }
