@@ -37,8 +37,8 @@ const Onboarding3 = () => {
         onDrag={handleDrag}
         style={{
           top: '70px',
-          width: '350px',
-          height: '470px',
+          width: '305px',
+          height: '490px',
           padding: '50px',
           backgroundColor: '#FE8C00',
           color: '#FFFFFF',
