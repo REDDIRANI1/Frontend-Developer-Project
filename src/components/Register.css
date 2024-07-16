@@ -1,3 +1,4 @@
+/* Base styles */
 .register-page {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -7,19 +8,20 @@
 }
 
 .register-container {
-  width: 375px; /* Adjust width as needed */
+  width: 100%;
+  max-width: 375px; /* Adjust width as needed */
   height: auto; /* Auto height */
   max-height: 812px; /* Maximum height */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   padding: 20px;
   background-color: #FFFFFF;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   opacity: 1; /* Adjust opacity if needed */
   overflow: auto; /* Allow scrolling if content exceeds height */
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
 
 .register-container h2 {
@@ -97,7 +99,37 @@
   color: #FE8C00;
   text-decoration: none;
 }
+
 p.center-text {
   text-align: center;
   margin: 20px 0;
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 480px) {
+  .register-container {
+    max-width: 400px;
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .register-container {
+    max-width: 450px;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .register-container {
+    max-width: 500px;
+    padding: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .register-container {
+    max-width: 550px;
+    padding: 40px;
+  }
 }
