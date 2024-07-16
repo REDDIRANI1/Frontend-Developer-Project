@@ -9,7 +9,7 @@ body, html {
 }
 
 .background-container {
-  width: 120%;
+  width: 105%;
   height: 100vh;
   background-image: url('/image 39.png'); /* Adjust path to match your image */
   background-size: cover;
