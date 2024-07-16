@@ -34,8 +34,8 @@ body, html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   opacity: 1; /* Adjust opacity if needed */
   overflow: auto; /* Allow scrolling if content exceeds height */
-  /* text-align: center; */
-  /* top: 130px; */
+  text-align: center;
+  top: 130px;
   left: 0.5px;
   border-radius: 48px;
 }
