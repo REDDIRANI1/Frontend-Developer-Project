@@ -21,7 +21,8 @@ body, html {
 }
 
 .starting-screen {
-  width: 320px; /* Adjust width as needed */
+  width: 100%;
+  max-width: 375px;
   height: 370px; /* Auto height */
   max-height: 412px; /* Maximum height */
   position: relative; /* Ensure it's relative to allow z-index to work */
