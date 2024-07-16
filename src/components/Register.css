@@ -108,28 +108,28 @@ p.center-text {
 /* Media queries for responsive design */
 @media screen and (min-width: 480px) {
   .register-container {
-    max-width: 400px;
+    max-width: 340px;
     padding: 25px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .register-container {
-    max-width: 450px;
+    max-width: 380px;
     padding: 30px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .register-container {
-    max-width: 500px;
+    max-width: 420px;
     padding: 35px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .register-container {
-    max-width: 550px;
+    max-width: 460px;
     padding: 40px;
   }
 }
