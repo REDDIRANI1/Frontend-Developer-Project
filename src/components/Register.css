@@ -105,31 +105,31 @@ p.center-text {
   margin: 20px 0;
 }
 
-/* Media queries for responsive design */
+/* Media queries for responsive design 1 */
 @media screen and (min-width: 480px) {
-  .register-container {
-    max-width: 340px;
+  .login-container {
+    max-width: 400px;
     padding: 25px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .register-container {
-    max-width: 380px;
+  .login-container {
+    max-width: 450px;
     padding: 30px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .register-container {
-    max-width: 420px;
+  .login-container {
+    max-width: 500px;
     padding: 35px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .register-container {
-    max-width: 460px;
+  .login-container {
+    max-width: 550px;
     padding: 40px;
   }
 }
