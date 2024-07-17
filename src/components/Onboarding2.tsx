@@ -25,7 +25,7 @@ const Onboarding = () => {
     <div
       className="background-container1"
       style={{
-        width: '110%',
+        width: '100%',
         height: '100vh',
         backgroundImage: 'url("/image 9.png")',
         backgroundSize: 'cover',
