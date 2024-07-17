@@ -9,7 +9,6 @@ import Onboarding from './components/Onboarding';
 import Onboarding2 from './components/Onboarding2';
 import Onboarding3 from './components/Onboarding3';
 
-
 const App: React.FC = () => {
   return (
     <Router>
@@ -22,6 +21,7 @@ const App: React.FC = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/postlogin" element={<PostLogin />} /> {/* Add route for PostLogin */}
         <Route path="/tracking" element={<Tracking />} />
+        <Route path="/forgotpassword" element={<ForgotPassword/>}/>
       </Routes>
     </Router>
   );

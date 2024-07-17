@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate} from 'react-router-dom';
+import { Icon } from 'react-icons-kit';
+import { eyeOff } from 'react-icons-kit/feather/eyeOff';
+import { eye } from 'react-icons-kit/feather/eye';
 import { GoogleLoginButton } from 'react-social-login-buttons';
 import { LoginSocialGoogle } from 'reactjs-social-login';
 
@@ -13,7 +16,10 @@ const Register: React.FC <RegisterProps> = ({ variant = 'active' }) => {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [passwordVisible, setPasswordVisible] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(false);
   const [agree, setAgree] = useState(true);
+  const navigate = useNavigate();
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
@@ -37,6 +43,14 @@ const Register: React.FC <RegisterProps> = ({ variant = 'active' }) => {
       alert('You must agree with the terms of service and privacy policy.');
       return;
     }
+    const isLoggedIn = true; // Replace with actual login logic
+
+    if (isLoggedIn) {
+      navigate('/login'); // Redirect to post-login page
+    } else {
+      // Handle login failure, show error message, etc.
+      alert('Login failed. Please check your credentials.');
+    }
     // Implement your registration logic here
     console.log('Email:', email);
     console.log('Username:', username);
@@ -44,6 +58,18 @@ const Register: React.FC <RegisterProps> = ({ variant = 'active' }) => {
     console.log('Agree:', agree);
     // Example: You might want to send a registration request to your backend
   };
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+
+  const handleMouseDown = () => {
+    setShowOverlay(true);
+  };
+
+  const handleMouseUp = () => {
+    setShowOverlay(false);
+  };
+
 
   return (
     <div className="register-container">
@@ -68,14 +94,25 @@ const Register: React.FC <RegisterProps> = ({ variant = 'active' }) => {
             required
           />
         </label>
-        <label>
+        <label className="password-label">
           Password
-          <input
-            type="password"
-            value={password}
-            onChange={handlePasswordChange}
-            required
-          />
+          <div className="password-input-container">
+              <input
+                type={passwordVisible ? 'text' : 'password'} // Toggle input type
+                value={password}
+                onChange={handlePasswordChange}
+                required
+                className={showOverlay ? 'overlay-visible' : 'overlay-input'}
+                onMouseDown={handleMouseDown}
+                onMouseUp={handleMouseUp}
+                onMouseLeave={handleMouseUp}
+              />
+              <Icon
+                icon={passwordVisible ? eye : eyeOff}
+                className="eye-icon"
+                onClick={togglePasswordVisibility}
+              />
+            </div>
         </label>
         <div className={`terms-agree ${variant === 'active' ? 'active' : ''}`}>
             <input
@@ -111,7 +148,7 @@ const Register: React.FC <RegisterProps> = ({ variant = 'active' }) => {
           <GoogleLoginButton />
         </LoginSocialGoogle>
       </div>
-      <p>Have an account? <Link to="/login">Sign in</Link></p>
+      <p>Have an account? <Link to="/login">Sign In</Link></p>
     </div>
   );
 };

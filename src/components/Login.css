@@ -84,6 +84,26 @@
   text-decoration: none;
 }
 
+.password-input-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+}
+/* Login.css */
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+
+
 /* Media queries for responsive design */
 @media screen and (min-width: 480px) {
   .login-container {

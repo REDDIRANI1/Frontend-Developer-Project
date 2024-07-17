@@ -102,6 +102,25 @@ p.center-text {
   text-align: center;
   margin: 20px 0;
 }
+.password-input-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+}
+/* Login.css */
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+
 @media screen and (min-width: 480px) {
   .register-container {
     max-width: 400px;
